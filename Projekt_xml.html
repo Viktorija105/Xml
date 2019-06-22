@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+h2{
+padding: 12px 10px;
+margin-left:610px;
+color: #33CC33;
+}
+button {
+  background-color:grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  color: gray;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 40%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Sign up form</h2>
+
+<form action="login.php" method="POST" onsubmit="return checkLogin()">
+  <div class="imgcontainer">
+    <img src="xml_img.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+	<label>Personal information</label> <br><br>
+    <label>First name</label>
+	<input type="text" name="First_name" id="first"required>
+
+    <label>Last name</label>
+    <input type="text" name="Last_name" id="last" required>
+	
+	 <label>Date of birth</label>
+    <input type="text" name="Year" id="birth" required>
+	
+	<label>City</label>
+    <input type="text" name="Ciy" id="city" required>
+	
+	<label>E-mail</label>
+    <input type="text" name="Email" name="mail" required>
+	
+	<label>Phone number</label>
+    <input type="text" name="Number" name="phone" required>
+	
+	
+        
+    <button type="submit" value="submit" name="submit">Sign up</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Need <a href="#">help?</a></span>
+  </div>
+</form>
+
+
+
+
+
+</body>
+
+</html>
